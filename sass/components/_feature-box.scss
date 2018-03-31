@@ -2,7 +2,7 @@
   background-color: rgba($color-white, .8);
   font-size: 1.5rem;
   padding: 2.5rem;
-  border-radius: 3px;
+  border-radius: $border-radius-three;
   box-shadow: $box-shadow-medium;
   transition: transform .3s;
 
