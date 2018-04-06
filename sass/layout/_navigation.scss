@@ -16,6 +16,16 @@
     box-shadow: 0 1rem 2rem rgba($color-black, .1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
+
+    @include respond(tab-port) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__background {
@@ -31,6 +41,16 @@
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
     //transform: scale(80);
+
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
 
   &__nav {
@@ -135,11 +155,11 @@
 
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
-    transform: rotate(135deg);
+    transform: rotate(45deg);
   }
 
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
   }
 }

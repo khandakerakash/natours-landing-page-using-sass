@@ -39,10 +39,10 @@
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">Akash</span>
+                    <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header><!-- /.header -->
 
@@ -123,7 +123,7 @@
                 </div>
             </section><!-- /.section-features -->
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tour
@@ -157,11 +157,11 @@
 
                             <div class="card__side card__side--back card__side--back-1">
                                 <div class="card__cta u-center-text">
-                                    <div class="card__price-box u-margin-bottom-big">
+                                    <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -193,11 +193,11 @@
 
                             <div class="card__side card__side--back card__side--back-2">
                                 <div class="card__cta u-center-text">
-                                    <div class="card__price-box u-margin-bottom-big">
+                                    <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$575</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -229,11 +229,11 @@
 
                             <div class="card__side card__side--back card__side--back-3">
                                 <div class="card__cta u-center-text">
-                                    <div class="card__price-box u-margin-bottom-big">
+                                    <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$840</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +342,10 @@
 
         <footer class="footer">
             <div class="footer__logo-box u-margin-bottom-big">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+                </picture>
             </div>
 
             <div class="row">
@@ -366,6 +369,27 @@
                 </div>
             </div>
         </footer><!-- /.footer -->
+
+        <!-- CSS POPUP START -->
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+                </div>
+
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text u-margin-bottom-medium u-justify-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin sed. Faucibus purus in massa tempor nec feugiat. Consequat id porta nibh venenatis cras. Posuere morbi leo urna molestie at. Duis convallis convallis tellus id interdum. Sodales neque sodales ut etiam sit amet nisl purus in. Nec nam aliquam sem et tortor. Neque aliquam vestibulum morbi blandit cursus risus at. Proin fermentum leo vel orci porta non pulvinar. Elementum tempus egestas sed sed risus pretium. Sed risus pretium quam vulputate dignissim suspendisse. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Adipiscing at in tellus integer feugiat scelerisque varius morbi.
+                    </p>
+                    <a href="#" class="btn btn--green">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- CSS POPUP END -->
 
         <!-- Won Grid Systems
         <section class="grid-test">

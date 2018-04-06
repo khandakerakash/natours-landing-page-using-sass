@@ -1,6 +1,10 @@
 .composition {
   position: relative;
 
+  @include respond(tab-port) {
+    padding-bottom: 20rem;
+  }
+
   &__photo {
       width: 55%;
       box-shadow: $box-shadow-medium;
